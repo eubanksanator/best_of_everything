@@ -5,4 +5,5 @@ class Venue < ActiveRecord::Base
 
   has_many :favorites
   belongs_to :neighborhood
+  has_many :dishes, :through => :favorites
 end

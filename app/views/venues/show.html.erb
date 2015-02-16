@@ -35,7 +35,11 @@
         </div>
       </div>
 
-      Display a list of dishes that have been marked as favorites at this venue
+      <ul class="list-group">
+      <% @venue.dishes.uniq.each do |dish| %>
+        <li class="list-group-item"><%= dish.name %></li>
+      <% end %>
+      </ul>
 
     </div>
   </div>
