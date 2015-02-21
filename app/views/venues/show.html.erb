@@ -17,7 +17,7 @@
               <dd><%= @venue.address %></dd>
 
               <dt>Neighborhood</dt>
-              <dd><%= @venue.neighborhood.name %></dd>
+              <dd><%= @venue.neighborhood_id %></dd>
 
             </dl>
             <div class="btn-group btn-group-justified">
@@ -34,13 +34,6 @@
           </div>
         </div>
       </div>
-
-      <ul class="list-group">
-      <% @venue.dishes.uniq.each do |dish| %>
-        <li class="list-group-item"><%= dish.name %></li>
-      <% end %>
-      </ul>
-
     </div>
   </div>
 </div>

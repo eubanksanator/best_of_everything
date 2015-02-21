@@ -28,27 +28,6 @@
           </div>
         </div>
       </div>
-
-      <ul class="list-group">
-      <% @cuisine.dishes.each do |dish| %>
-        <li class="list-group-item"><%= dish.name %></li>
-      <% end %>
-
-        <li class="list-group-item">
-
-        <!-- <form action="/dishes" method="post"> -->
-        <%= form_tag dishes_url, :method => "post" do %>
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" class="form-control">
-          <input type="hidden" name="cuisine_id" value="<%= @cuisine.id %>">
-          <input type="submit" class="btn btn-primary">
-        <% end %>
-        <!-- </form> -->
-        </li>
-
-      </ul>
-
-
     </div>
   </div>
 </div>

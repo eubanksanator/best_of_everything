@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-
-  devise_for :users
-  root 'dishes#index'
-
   # Routes for the Venue resource:
   # CREATE
   get '/venues/new',      :controller => 'venues', :action => 'new',    :as => 'new_venue'
