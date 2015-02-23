@@ -1,4 +1,4 @@
-cuisine_hashes = [
+  cuisine_hashes = [
   { :name => "Breakfast" },
   { :name => "American" },
   { :name => "Drink" },
