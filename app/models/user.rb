@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  validates :username, :presense => true
+  # validates :username, :presense => true
 
   has_many :favorites
 
